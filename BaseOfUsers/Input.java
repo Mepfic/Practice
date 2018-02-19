@@ -24,7 +24,7 @@ public class Input {
         BufferedReader in;
         String [] dataUser;
 
-        UserBuilder userBuilder = new UserBuilder();
+
         try {
             in = new BufferedReader(new FileReader(filePath));
             MappingString splitting = sData -> sData.split("\\|");
@@ -38,7 +38,15 @@ public class Input {
                     ifStudent = false;
                 } else ifStudent = true;
                 rating = Float.parseFloat(dataUser[5].trim());
-                users.add(userBuilder.createUser(firstName, lastName, age, gender,ifStudent,rating));
+                User user = new User();
+                users.add(user.userBuilder()
+                        .firstName(firstName)
+                        .lastName(lastName)
+                        .age(age)
+                        .gender(gender)
+                        .ifStudent(ifStudent)
+                        .rating(rating)
+                        .build());
                 /*for (String s : splitting.map(sData)) {
                     System.out.print(s.trim());
                 }
