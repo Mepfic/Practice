@@ -1,4 +1,5 @@
-Ваня|Иванов |18 | мен | студ | 18,5
-Петя|Петров | 22 | муж | нет | 21,3
-Сидор | Сидоров | 19 | муж | no | 11,4
-Наташа| Степанова | 23 | жен | ст | 19,4
+Sergey|Sergeev| 99|men|no|87.3
+Vanya|Ivanov |18 | men | stud | 18.5
+Petya|Petrov | 22 | men | stud | 21.3
+Sidor | Sidorov | 19 | men | no | 11.4
+Natasha | Stepanova | 23 | women | stud | 19.4
